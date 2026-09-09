@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Aura | Luxury Perfumes</title>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">L'AURA</a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="cart-icon" id="cart-btn">
+                    <!-- Simple SVG Cart Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Pouring Animation -->
+    <header id="hero" class="hero">
+        <div class="hero-split">
+            <!-- Left Side: Text -->
+            <div class="hero-content">
+                <h1 class="animate-on-scroll fade-up delay-1">Discover Your Signature Scent</h1>
+                <p class="animate-on-scroll fade-up delay-2">Elegance captured in a bottle. Experience the finest fragrances crafted with passion and precision.</p>
+                <div class="animate-on-scroll fade-up delay-3">
+                    <a href="#collection" class="btn btn-primary">Shop Collection</a>
+                </div>
+            </div>
+            
+            <!-- Right Side: Animated Pouring Scene -->
+            <div class="hero-animation animate-on-scroll fade-in delay-2">
+                <div class="perfume-scene">
+                    <!-- Stream of liquid pouring from above -->
+                    <div class="pour-stream"></div>
+                    
+                    <div class="bottle-neck open-neck"></div>
+                    <div class="bottle-body">
+                        <!-- Liquid filling up -->
+                        <div class="liquid-fill">
+                            <!-- Splashes at the surface of the liquid -->
+                            <div class="splashes">
+                                <div class="drop d1"></div>
+                                <div class="drop d2"></div>
+                                <div class="drop d3"></div>
+                            </div>
+                            <!-- Bubbles inside the liquid -->
+                            <div class="bubble b1"></div>
+                            <div class="bubble b2"></div>
+                            <div class="bubble b3"></div>
+                            <div class="bubble b4"></div>
+                        </div>
+                        <div class="bottle-label">L'AURA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Collection Section -->
+    <section id="collection" class="collection section-padding">
+        <div class="container">
+            <div class="section-title animate-on-scroll fade-up">
+                <h2>Our Exquisite Collection</h2>
+                <div class="underline"></div>
+                <p>Curated scents for every mood and occasion.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card animate-on-scroll fade-up delay-1">
+                    <div class="product-img-container">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800" alt="Velvet Rose Perfume" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Rose</h3>
+                        <p class="notes">Notes: Turkish Rose, Oud, Vanilla</p>
+                        <p class="price">$145.00</p>
+                        <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card animate-on-scroll fade-up delay-2">
+                    <div class="product-img-container">
+                        <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?auto=format&fit=crop&q=80&w=800" alt="Midnight Ember Perfume" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Midnight Ember</h3>
+                        <p class="notes">Notes: Sandalwood, Bergamot, Amber</p>
+                        <p class="price">$160.00</p>
+                        <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card animate-on-scroll fade-up delay-3">
+                    <div class="product-img-container">
+                        <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&q=80&w=800" alt="Oceanic Breeze Perfume" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Oceanic Breeze</h3>
+                        <p class="notes">Notes: Sea Salt, Jasmine, Musk</p>
+                        <p class="price">$130.00</p>
+                        <button class="btn btn-outline add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-image animate-on-scroll slide-right">
+                <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=1000" alt="Perfume Ingredients">
+            </div>
+            <div class="about-text animate-on-scroll slide-left">
+                <h2>The Art of Perfumery</h2>
+                <div class="underline-left"></div>
+                <p>At L'Aura, we believe that a fragrance is more than just a scent; it's an invisible accessory, a lingering memory, and a deeply personal statement.</p>
+                <p>Our master perfumers source the highest quality ingredients from around the world to create harmonious, long-lasting blends that evolve beautifully on your skin.</p>
+                <a href="#collection" class="btn btn-primary">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="animate-on-scroll fade-in">
+        <div class="container footer-container">
+            <div class="footer-brand animate-on-scroll fade-up delay-1">
+                <h2>L'AURA</h2>
+                <p>Luxury fragrances crafted for the modern individual.</p>
+            </div>
+            <div class="footer-links animate-on-scroll fade-up delay-2">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#collection">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact animate-on-scroll fade-up delay-3">
+                <h3>Contact Us</h3>
+                <p>Email: hello@laura.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 L'Aura Perfumes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
